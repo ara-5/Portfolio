@@ -21,6 +21,24 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23050E1F'/%3E%3Cline x1='16' y1='9' x2='8' y2='23' stroke='%2300D4FF' stroke-width='1.5'/%3E%3Cline x1='16' y1='9' x2='24' y2='23' stroke='%2300D4FF' stroke-width='1.5'/%3E%3Cline x1='8' y1='23' x2='24' y2='23' stroke='%2300D4FF' stroke-width='1.5' stroke-opacity='.5'/%3E%3Ccircle cx='16' cy='9' r='3' fill='%2300D4FF'/%3E%3Ccircle cx='8' cy='23' r='3' fill='%2300D4FF'/%3E%3Ccircle cx='24' cy='23' r='3' fill='%2300D4FF'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Athira Anil Kumar",
+  "jobTitle": "GenAI Security Testing Developer",
+  "url": "https://ara-5.github.io/Portfolio/",
+  "email": "mailto:ara.ceh24@gmail.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/athira-a-k",
+    "https://github.com/ara-5"
+  ],
+  "address": { "@type": "PostalAddress", "addressLocality": "Sharjah", "addressCountry": "AE" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of West London" },
+  "knowsAbout": ["Generative AI", "Agentic AI", "LLM Security", "AI Red Teaming", "RAG", "Reinforcement Learning", "Machine Learning"]
+}
+</script>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -503,6 +521,22 @@
   .fade-up { opacity: 0; transform: translateY(32px); transition: opacity 0.65s ease, transform 0.65s ease; }
   .fade-up.visible { opacity: 1; transform: translateY(0); }
 
+  /* ── FOCUS VISIBILITY ── */
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 2px;
+  }
+
+  /* ── REDUCED MOTION ── */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important; animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+    .fade-up { opacity: 1; transform: none; }
+    #particles { display: none; }
+  }
+
   @media (max-width: 768px) {
     nav { padding: 16px 24px; }
     nav.scrolled { padding: 12px 24px; }
@@ -530,6 +564,7 @@
   <a href="#research" class="mobile-link">Research</a>
   <a href="#experience" class="mobile-link">Experience</a>
   <a href="#education" class="mobile-link">Education</a>
+  <a href="Athira-Anil-Kumar-Resume.pdf" target="_blank" rel="noopener" class="mobile-link">Resume</a>
   <a href="#contact" class="mobile-link" style="color: var(--cyan);">Hire Me</a>
 </div>
 
@@ -543,6 +578,7 @@
     <li><a href="#research" id="nav-research">Research</a></li>
     <li><a href="#experience" id="nav-experience">Experience</a></li>
     <li><a href="#education" id="nav-education">Education</a></li>
+    <li><a href="Athira-Anil-Kumar-Resume.pdf" target="_blank" rel="noopener" id="nav-resume">Resume</a></li>
     <li><a href="#contact" class="nav-cta" id="nav-contact">Hire Me</a></li>
   </ul>
   <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -738,7 +774,7 @@
       <div class="project-header">
         <div class="project-tags"><span class="project-tag tag-genai">GenAI</span></div>
         <div class="project-links">
-          <a href="https://github.com/ara-5/Genai-rag-agent" target="_blank" rel="noopener" class="project-link" title="View on GitHub" aria-label="Enterprise Agentic RAG Platform on GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+          <a href="https://github.com/ara-5/Enterprise-Agentic-RAG-Platform" target="_blank" rel="noopener" class="project-link" title="View on GitHub" aria-label="Enterprise Agentic RAG Platform on GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
         </div>
       </div>
       <div class="project-body">
@@ -1050,6 +1086,11 @@
       <span class="avail-dot"></span>
       Available immediately · Sharjah, UAE
     </div>
+    <div class="fade-up" style="margin-top: 28px;">
+      <a href="Athira-Anil-Kumar-Resume.pdf" target="_blank" rel="noopener" class="btn-secondary" id="contact-resume">
+        Download Resume →
+      </a>
+    </div>
   </div>
 </section>
 
@@ -1065,6 +1106,8 @@
 </button>
 
 <script>
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 // ── PARTICLE NEURAL NETWORK ──────────────────────────────────────────────────
 const canvas = document.getElementById('particles');
 const ctx = canvas.getContext('2d');
@@ -1127,9 +1170,9 @@ function draw() {
       }
     }
   }
-  requestAnimationFrame(draw);
+  if (!prefersReducedMotion) requestAnimationFrame(draw);
 }
-draw();
+if (!prefersReducedMotion) draw();
 
 // ── TYPED TEXT ───────────────────────────────────────────────────────────────
 const lines = [
@@ -1138,22 +1181,27 @@ const lines = [
   'AI Red Teaming & Adversarial Testing.',
   'From architecture to deployment.',
 ];
-let li = 0, ci = 0, deleting = false;
 const el = document.getElementById('typed-text');
 
-function type() {
-  const line = lines[li];
-  if (!deleting) {
-    el.textContent = line.slice(0, ++ci);
-    if (ci === line.length) { deleting = true; setTimeout(type, 2000); return; }
-    setTimeout(type, 48);
-  } else {
-    el.textContent = line.slice(0, --ci);
-    if (ci === 0) { deleting = false; li = (li + 1) % lines.length; setTimeout(type, 400); return; }
-    setTimeout(type, 24);
+if (prefersReducedMotion) {
+  el.textContent = lines[0];
+  document.querySelector('.cursor')?.style.setProperty('display', 'none');
+} else {
+  let li = 0, ci = 0, deleting = false;
+  function type() {
+    const line = lines[li];
+    if (!deleting) {
+      el.textContent = line.slice(0, ++ci);
+      if (ci === line.length) { deleting = true; setTimeout(type, 2000); return; }
+      setTimeout(type, 48);
+    } else {
+      el.textContent = line.slice(0, --ci);
+      if (ci === 0) { deleting = false; li = (li + 1) % lines.length; setTimeout(type, 400); return; }
+      setTimeout(type, 24);
+    }
   }
+  type();
 }
-type();
 
 // ── NAV SHRINK ON SCROLL ─────────────────────────────────────────────────────
 const mainNav = document.getElementById('main-nav');
