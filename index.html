@@ -623,7 +623,7 @@
   </div>
   <div class="hero-stats" aria-label="Quick stats">
     <div class="stat">
-      <div class="stat-num">10<span>+</span></div>
+      <div class="stat-num">15<span>+</span></div>
       <div class="stat-label">AI Projects</div>
     </div>
     <div class="stat">
@@ -780,6 +780,28 @@
   </div>
   <div class="projects-grid" id="projects-grid">
 
+    <article class="project-card" data-tags="security genai">
+      <div class="project-header">
+        <div class="project-tags">
+          <span class="project-tag tag-security">Security</span>
+          <span class="project-tag tag-genai">GenAI</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ara-5/AI-Security-Gateway" target="_blank" rel="noopener" class="project-link" title="View on GitHub" aria-label="AI Security Gateway on GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+          <a href="https://ara-5.github.io/AI-Security-Gateway/" target="_blank" rel="noopener" class="project-link" title="Live Demo" aria-label="AI Security Gateway live demo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-metric">🛡️ 100% recall · 0% FPR · cuts LLM compromise 90.8%→19.7%</div>
+        <div class="project-title">AI Security Gateway</div>
+        <div class="project-desc">Security middleware between users and LLMs — detects prompt injection, jailbreaks, system-prompt leakage, PII, toxicity, and malicious tool calls in real time, then allows, flags, sanitizes, or blocks with a full audit log.</div>
+        <div class="project-tech">
+          <span class="tech-tag">FastAPI</span><span class="tech-tag">Python</span>
+          <span class="tech-tag">Docker</span><span class="tech-tag">GitHub Actions</span>
+        </div>
+      </div>
+    </article>
+
     <article class="project-card" data-tags="genai">
       <div class="project-header">
         <div class="project-tags"><span class="project-tag tag-genai">GenAI</span></div>
@@ -805,6 +827,65 @@
           <span class="project-tag tag-automation">Automation</span>
         </div>
         <div class="project-links">
+          <a href="https://github.com/ara-5/Production-LLMOps-Platform" target="_blank" rel="noopener" class="project-link" title="View on GitHub" aria-label="Production LLMOps Platform on GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-metric">📊 p50/p95/p99 latency · cost tracking · LLM-as-judge</div>
+        <div class="project-title">Production LLMOps Platform</div>
+        <div class="project-desc">Self-hosted observability and regression-testing platform for Claude-powered apps — tracing, cost/latency/token metrics, and an LLM-as-judge evaluation engine that gates prompt changes against statistical baselines before they ship.</div>
+        <div class="project-tech">
+          <span class="tech-tag">FastAPI</span><span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">React</span><span class="tech-tag">Claude API</span><span class="tech-tag">Docker</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card" data-tags="genai">
+      <div class="project-header">
+        <div class="project-tags"><span class="project-tag tag-genai">GenAI</span></div>
+        <div class="project-links">
+          <a href="https://github.com/ara-5/Azure-Enterprise-Agentic-AI" target="_blank" rel="noopener" class="project-link" title="View on GitHub" aria-label="Azure Enterprise Agentic AI Platform on GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">Azure Enterprise Agentic AI Platform</div>
+        <div class="project-desc">Enterprise-grade Agentic RAG on Azure OpenAI + Azure AI Search with Semantic Kernel routing, zero-trust identity via Entra ID and Managed Identity, and Bicep/GitHub Actions IaC with an automated quality gate on groundedness and relevance.</div>
+        <div class="project-tech">
+          <span class="tech-tag">Semantic Kernel</span><span class="tech-tag">Azure OpenAI</span>
+          <span class="tech-tag">Azure AI Search</span><span class="tech-tag">Bicep</span><span class="tech-tag">Entra ID</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card" data-tags="security genai">
+      <div class="project-header">
+        <div class="project-tags">
+          <span class="project-tag tag-security">Security</span>
+          <span class="project-tag tag-genai">GenAI</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ara-5/Capstone-Agent" target="_blank" rel="noopener" class="project-link" title="View on GitHub" aria-label="CodeSentinel on GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-metric">⚡ 5-agent consensus · patches + reports in under 60s</div>
+        <div class="project-title">CodeSentinel — Multi-Agent Code Security Review</div>
+        <div class="project-desc">Five specialized AI agents debate and reach consensus to identify vulnerabilities in code, then auto-generate secure patches and professional security reports across multiple formats.</div>
+        <div class="project-tech">
+          <span class="tech-tag">Google ADK</span><span class="tech-tag">Gemini</span>
+          <span class="tech-tag">MCP</span><span class="tech-tag">Streamlit</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card" data-tags="genai automation">
+      <div class="project-header">
+        <div class="project-tags">
+          <span class="project-tag tag-genai">GenAI</span>
+          <span class="project-tag tag-automation">Automation</span>
+        </div>
+        <div class="project-links">
           <a href="https://github.com/ara-5/mind-mri-agent-second-brain" target="_blank" rel="noopener" class="project-link" title="View on GitHub" aria-label="Mind MRI Agent Second Brain on GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
         </div>
       </div>
@@ -815,6 +896,46 @@
         <div class="project-tech">
           <span class="tech-tag">Node.js</span><span class="tech-tag">Graph-RAG</span>
           <span class="tech-tag">TF-IDF</span><span class="tech-tag">D3.js</span><span class="tech-tag">REST API</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card" data-tags="security automation genai">
+      <div class="project-header">
+        <div class="project-tags">
+          <span class="project-tag tag-security">Security</span>
+          <span class="project-tag tag-automation">Automation</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ara-5/TrustMesh" target="_blank" rel="noopener" class="project-link" title="View on GitHub" aria-label="TrustMesh on GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">TrustMesh — SIM-Swap Fraud Defense</div>
+        <div class="project-desc">Real-time fraud defense engine using telecom CAMARA network APIs and n8n-orchestrated AI agents to detect and stop SIM-swap attacks before MENA digital payments complete, applying risk-based step-up authentication.</div>
+        <div class="project-tech">
+          <span class="tech-tag">n8n</span><span class="tech-tag">Groq/Llama 3.3</span>
+          <span class="tech-tag">CAMARA APIs</span><span class="tech-tag">Gemini Flash</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card" data-tags="security automation">
+      <div class="project-header">
+        <div class="project-tags">
+          <span class="project-tag tag-security">Security</span>
+          <span class="project-tag tag-automation">Automation</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ara-5/soc_automation_toolkit" target="_blank" rel="noopener" class="project-link" title="View on GitHub" aria-label="SOC Automation Toolkit on GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">SOC Automation Toolkit</div>
+        <div class="project-desc">CLI that parses security logs (SSH auth, CSV, JSON, syslog), detects brute-force and port-scan patterns, enriches alerts via VirusTotal/AbuseIPDB/GeoIP, and generates AI-summarized reports — treating log data as untrusted input to prevent prompt injection.</div>
+        <div class="project-tech">
+          <span class="tech-tag">Python</span><span class="tech-tag">Claude API</span>
+          <span class="tech-tag">VirusTotal</span><span class="tech-tag">AbuseIPDB</span>
         </div>
       </div>
     </article>
