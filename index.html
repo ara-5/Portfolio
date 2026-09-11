@@ -320,6 +320,47 @@
   }
   .skill-category:hover .pill { border-color: rgba(0,212,255,0.2); color: var(--text); }
 
+  /* ── SKILL TREE ── */
+  .skill-tree { max-width: 640px; margin: 0 auto 64px; }
+  .tree-root { display: flex; justify-content: center; }
+  .tree-root-badge {
+    font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 15px;
+    letter-spacing: 0.5px; padding: 10px 24px; border-radius: 30px;
+    background: var(--card); border: 1px solid var(--border); color: var(--text);
+  }
+  .tree-stem { width: 1px; height: 24px; background: var(--border); margin: 0 auto; }
+  .tree-crossbar { position: relative; height: 24px; max-width: 400px; margin: 0 auto; }
+  .tree-crossbar::before {
+    content: ''; position: absolute; top: 0; left: 25%; right: 25%; height: 1px;
+    background: var(--border);
+  }
+  .tree-crossbar-stem { position: absolute; top: 0; width: 1px; height: 24px; background: var(--border); }
+  .tree-crossbar-stem.left { left: 25%; }
+  .tree-crossbar-stem.right { left: 75%; }
+  .tree-branches-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .tree-node {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 10px 16px; border-radius: 8px; font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600; font-size: 14px; margin-bottom: 16px;
+  }
+  .tree-node-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+  .node-engineering { background: rgba(0,212,255,0.08); border: 1px solid rgba(0,212,255,0.3); color: var(--cyan); }
+  .node-engineering .tree-node-dot { background: var(--cyan); }
+  .node-security { background: rgba(255,77,109,0.08); border: 1px solid rgba(255,77,109,0.3); color: var(--coral); }
+  .node-security .tree-node-dot { background: var(--coral); }
+  .tree-leaves { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .tree-leaves li { font-size: 13px; color: var(--muted); padding-left: 18px; position: relative; text-align: left; }
+  .tree-leaves.leaves-engineering li::before { content: '→'; position: absolute; left: 0; color: var(--cyan); font-size: 12px; }
+  .tree-leaves.leaves-security li::before { content: '→'; position: absolute; left: 0; color: var(--coral); font-size: 12px; }
+
+  @media (max-width: 640px) {
+    .tree-crossbar { display: none; }
+    .tree-branches-grid { grid-template-columns: 1fr; gap: 28px; }
+    .tree-branches-grid .tree-branch::before {
+      content: ''; display: block; width: 1px; height: 20px; background: var(--border); margin: 0 auto 4px;
+    }
+  }
+
   /* ── PROJECTS ── */
   #projects { background: var(--bg2); }
   .filter-bar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 48px; }
@@ -708,6 +749,37 @@
   <div class="section-label">Skills</div>
   <h2 class="section-title fade-up">The <em>stack</em></h2>
   <p class="section-sub fade-up">Tools and technologies I use to build production AI systems.</p>
+
+  <div class="skill-tree fade-up" aria-hidden="true">
+    <div class="tree-root"><div class="tree-root-badge">Athira</div></div>
+    <div class="tree-stem"></div>
+    <div class="tree-crossbar">
+      <div class="tree-crossbar-stem left"></div>
+      <div class="tree-crossbar-stem right"></div>
+    </div>
+    <div class="tree-branches-grid">
+      <div class="tree-branch">
+        <div class="tree-node node-engineering"><span class="tree-node-dot"></span>AI Engineering</div>
+        <ul class="tree-leaves leaves-engineering">
+          <li>RAG &amp; LangGraph</li>
+          <li>Agentic AI Systems</li>
+          <li>Prompt Engineering</li>
+          <li>RAGAs Evaluation</li>
+          <li>FastAPI &amp; Docker</li>
+        </ul>
+      </div>
+      <div class="tree-branch">
+        <div class="tree-node node-security"><span class="tree-node-dot"></span>AI Security</div>
+        <ul class="tree-leaves leaves-security">
+          <li>AI Red Teaming</li>
+          <li>Jailbreak Testing</li>
+          <li>Prompt Injection Testing</li>
+          <li>LLM Security Evaluation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <div class="skills-grid fade-up">
     <div class="skill-category">
       <div class="skill-cat-name">Generative AI &amp; LLMs</div>
