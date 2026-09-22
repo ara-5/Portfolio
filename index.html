@@ -669,7 +669,7 @@
   </div>
   <div class="hero-stats" aria-label="Quick stats">
     <div class="stat">
-      <div class="stat-num">15<span>+</span></div>
+      <div class="stat-num">20<span>+</span></div>
       <div class="stat-label">AI Projects</div>
     </div>
     <div class="stat">
@@ -856,6 +856,70 @@
     <button class="filter-btn" data-filter="nlp" id="filter-nlp">NLP</button>
   </div>
   <div class="projects-grid" id="projects-grid">
+
+    <article class="project-card" data-tags="automation genai">
+      <div class="project-header">
+        <div class="project-tags">
+          <span class="project-tag tag-automation">Automation</span>
+          <span class="project-tag tag-genai">GenAI</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ara-5/fullstack-crm" target="_blank" rel="noopener" class="project-link" title="View on GitHub" aria-label="Full-Stack CRM Platform on GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+          <a href="https://fullstack-crm-cyan.vercel.app" target="_blank" rel="noopener" class="project-link" title="Live Demo" aria-label="Full-Stack CRM Platform live demo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-metric">🔗 HMAC-signed webhooks · AI agent requires approval before writes</div>
+        <div class="project-title">Full-Stack CRM Platform</div>
+        <div class="project-desc">Production CRM with contact/company management, a drag-and-drop deal pipeline, role-based access, and REST API with HMAC-signed, retry-safe webhooks. Optional AI layer adds deal-insight summarization and an agentic assistant that requires explicit user approval before any data modification.</div>
+        <div class="project-tech">
+          <span class="tech-tag">Next.js</span><span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">PostgreSQL</span><span class="tech-tag">Prisma</span><span class="tech-tag">Claude API</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card" data-tags="automation genai">
+      <div class="project-header">
+        <div class="project-tags">
+          <span class="project-tag tag-automation">Automation</span>
+          <span class="project-tag tag-genai">GenAI</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ara-5/trading-erp" target="_blank" rel="noopener" class="project-link" title="View on GitHub" aria-label="Trading ERP Platform on GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-metric">📚 Double-entry accounting · 7 role-based access tiers</div>
+        <div class="project-title">Trading ERP Platform</div>
+        <div class="project-desc">Full-stack ERP for trading companies unifying sales/CRM, purchasing, multi-warehouse inventory with weighted-average costing, and double-entry accounting with bank reconciliation. Includes HR/payroll and an optional Claude-powered copilot for business queries and bill data extraction.</div>
+        <div class="project-tech">
+          <span class="tech-tag">Next.js</span><span class="tech-tag">NestJS</span>
+          <span class="tech-tag">Prisma</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Claude API</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card" data-tags="rl">
+      <div class="project-header">
+        <div class="project-tags">
+          <span class="project-tag tag-rl">Reinforcement Learning</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ara-5/multi-agent-system" target="_blank" rel="noopener" class="project-link" title="View on GitHub" aria-label="Multi-Agent Reinforcement Learning System on GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+          <a href="https://claude.ai/code/artifact/43ff9a43-2bfe-4ba7-9bbb-c12a43275fff" target="_blank" rel="noopener" class="project-link" title="Live Demo" aria-label="Multi-Agent Reinforcement Learning System live demo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-metric">🤝 99.7% of theoretical max information transfer, validated across seeds</div>
+        <div class="project-title">Multi-Agent Reinforcement Learning System</div>
+        <div class="project-desc">Cooperative, competitive, and emergent-communication multi-agent RL across three PettingZoo environments, trained with PPO. An explicit information-bottleneck architecture and mutual-information auxiliary loss let agents learn a real communication protocol — validated with multi-seed runs, not just a rising reward curve.</div>
+        <div class="project-tech">
+          <span class="tech-tag">PettingZoo</span><span class="tech-tag">Stable-Baselines3</span>
+          <span class="tech-tag">PPO</span><span class="tech-tag">Python</span>
+        </div>
+      </div>
+    </article>
 
     <article class="project-card" data-tags="security genai">
       <div class="project-header">
